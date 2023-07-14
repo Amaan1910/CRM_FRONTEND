@@ -13,6 +13,22 @@ axios.interceptors.request.use(function (config) {
   return config;
 });
 
+axios.interceptors.response.use(
+  function (response) {
+    return response;
+  },
+  function (error) {
+    if (error.response.status === 401) {
+      localStorage.clear();
+      toast.success(
+        "You have been logged out. Login with your credentials to continue!"
+      );
+      window.location.href = "/";
+      window.location.reload();
+    }
+  }
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
