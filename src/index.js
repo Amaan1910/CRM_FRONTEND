@@ -4,12 +4,13 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 
 axios.interceptors.request.use(function (config) {
   const token = localStorage.getItem("token");
   config.headers["x-access-token"] = token;
+
   return config;
 });
 

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@coreui/coreui": "^4.2.6",
     "@coreui/react": "^4.8.0",
     "@material-table/core": "^6.1.17",
