@@ -61,7 +61,7 @@ const Customer = () => {
     try {
       await axios.post(`${BASE_URL}/crm/api/v1/tickets`, data);
 
-      toast.success("Created a new ticket!");
+      toast.success("Please reload the page");
       setShowCreateTicketModal(false);
       setTicketCreationData(
         ticketList.map((ticket) =>
