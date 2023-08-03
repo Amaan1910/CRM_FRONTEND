@@ -68,6 +68,7 @@ const Customer = () => {
           ticket.id === ticketDetail.id ? ticketDetail : ticket
         )
       );
+      window.location.reload();
     } catch (ex) {
       toast.error("Error while creating a new ticket!");
     }
