@@ -86,7 +86,7 @@ const Auth = () => {
         toast.error("Admin is yet to approve your sign in request");
         return;
       }
-      toast.error(ex.response.data.message);
+      toast.error("Invalid userId or password");
     }
   };
 
