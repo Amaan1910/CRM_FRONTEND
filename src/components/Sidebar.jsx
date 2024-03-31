@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
     <CSidebar>
       <CSidebarNav>
-        <CNavItem href="#" className="bg-dark">
+        <CNavItem href="#" className="bg-dark px-4">
           <i className="bi bi-bar-chart-fill text-white m-2"></i>
           <h5 className="text-white m-3 my-1 fw-bolder">TICKETEER</h5>
         </CNavItem>
